@@ -37,9 +37,12 @@ public class elasticService {
 //        searchSourceBuilder.query(queryBuilder);
 //        SearchRequest searchRequest = new SearchRequest();
 //        searchRequest.source(searchSourceBuilder);
-//        client.search(searchRequest,RequestOptions.DEFAULT)
+//        client.search(searchRequest,RequestOptions.DEFAULT);
+        
+        
         GetRequest getRequest = new GetRequest();
-        getRequest.index("global_house_list").id("1572502958266");
+        getRequest.index("test-index").id("32");
+        
         return client.exists(getRequest,RequestOptions.DEFAULT);
     }
 

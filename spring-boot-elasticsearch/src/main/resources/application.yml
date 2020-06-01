@@ -10,8 +10,8 @@ server:
 spring:
   data:
     elasticsearch:
-      cluster-nodes: 10.20.4.66
-      cluster-port: 9200
+      cluster-nodes: 192.168.100.254
+      cluster-port: 29200
       username: elastic
-      password: 654321 
+      password: Od_48923%dlocl802qWc 
       
